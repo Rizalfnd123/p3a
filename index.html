@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil P3A Komisariat Hukum UTM</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> <!-- Tautan Google Fonts -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif; /* Terapkan font Poppins */
+        }
+        /* Custom styles for hover effects */
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .navbar-item {
+            transition: background-color 0.3s;
+        }
+        .navbar-item:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-green-50 text-gray-900">
+
+    <!-- Navbar -->
+    <nav class="bg-green-800 text-white shadow-md sticky top-0 z-10">
+        <div class="container mx-auto px-2 flex justify-between items-center py-3">
+            <h1 class="text-lg md:text-xl font-bold">P3A UTM</h1>
+            <div class="block md:hidden">
+                <button id="navbar-toggle" class="focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+            <div id="navbar-menu" class="hidden md:flex space-x-2">
+                <a href="#" class="navbar-item px-2 py-2 rounded-md">Home</a>
+                <a href="#program" class="navbar-item px-2 py-2 rounded-md">Program</a>
+                <a href="#ruang-akademik" class="navbar-item px-2 py-2 rounded-md">Ruang Akademik</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-green-800 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-3xl md:text-4xl font-bold">Selamat datang di layanan P3A Komisariat Hukum UTM</h1>
+        </div>
+    </header>
+
+    <!-- Join Us Button -->
+    <div class="text-center my-12">
+        <a href="#" class="bg-green-700 text-white text-xl font-semibold py-4 px-8 rounded-lg shadow-lg hover:bg-green-600 transition duration-300">Join Us</a>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12 space-y-10">
+        
+        <!-- Section: APA ITU P3A? -->
+        <section id="apa-itup3a" class="text-center">
+            <h2 class="text-2xl md:text-3xl font-semibold text-green-700">APA ITU <strong>P3A?</strong></h2>
+            <p class="mt-4 max-w-2xl mx-auto">
+                P3A hadir untuk memudahkan kader HMI dalam mengembangkan potensi mereka sesuai dengan minat dan konsentrasi yang diminati. Kami menyediakan bimbingan langsung dari mentor-mentor berpengalaman, membantu kamu untuk mencapai keahlian yang lebih baik dalam berbagai bidang
+             </p>
+        </section>
+
+        <!-- Section: Program Peminatan & Pengembangan -->
+        <section id="program">
+            <h3 class="text-2xl md:text-3xl font-bold text-green-700 text-center">Pilihan Peminatan & Pengembangan Soft Skills di P3A</h3>
+            <p class="text-center mb-10 text-gray-600">Raih Potensimu, Wujudkan Mimpimu!</p>
+
+            <!-- Cards for each program -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="card bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/400x200" alt="Debat" class="w-full h-48 object-cover">
+                    <div class="p-4 md:p-6">
+                        <h4 class="text-lg md:text-xl font-semibold text-green-700">1. Debat - Kuasai Seni Berfikir Kritis dan Komunikasi Efektif</h4>
+                        <p class="text-gray-700 mt-2">Ingin menjadi pembicara yang mampu memukau audiens dengan argumen tajam dan berpikir cepat? Program debat kami akan mengasah kemampuan berpikir logis, menganalisis masalah secara mendalam, dan menyampaikan argumen dengan penuh percaya diri. Jadilah debater yang tak hanya berbicara, tapi juga menyuarakan perubahan.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/400x200" alt="Kepenulisan" class="w-full h-48 object-cover">
+                    <div class="p-4 md:p-6">
+                        <h4 class="text-lg md:text-xl font-semibold text-green-700">2. Kepenulisan – Ciptakan Karya yang Menginspirasi dan Berpengaruh</h4>
+                        <p class="text-gray-700 mt-2">Apakah kamu bermimpi menjadi penulis yang tulisannya mampu menggugah hati dan pikiran banyak orang? Melalui program kepenulisan, kamu akan belajar menghasilkan karya tulis yang kuat, baik untuk artikel, esai, maupun penelitian ilmiah. Ini kesempatanmu untuk menciptakan tulisan yang meninggalkan jejak di dunia.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/400x200" alt="Legal Opinion" class="w-full h-48 object-cover">
+                    <div class="p-4 md:p-6">
+                        <h4 class="text-lg md:text-xl font-semibold text-green-700">3. Legal Opinion – Jadi Ahli yang Menguasai Hukum Secara Mendalam</h4>
+                        <p class="text-gray-700 mt-2">Ingin berperan sebagai konsultan hukum yang pandai memberikan pendapat hukum yang solutif dan profesional? Di sini, kamu akan belajar menyusun pendapat hukum berdasarkan analisis mendalam yang akan membedakanmu dari yang lain. Jadilah suara hukum yang dihormati.</p>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="card bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/400x200" alt="Legal Drafting" class="w-full h-48 object-cover">
+                    <div class="p-4 md:p-6">
+                        <h4 class="text-lg md:text-xl font-semibold text-green-700">4. Legal Drafting – Menjadi Ahli dalam Menyusun Dokumen Hukum Penting</h4>
+                        <p class="text-gray-700 mt-2">Tertarik untuk mendalami seni menyusun dokumen hukum seperti kontrak atau perjanjian? Dengan pelatihan legal drafting di P3A, kamu akan dilatih untuk menghasilkan dokumen yang akurat, profesional, dan berkualitas. Ini adalah keterampilan krusial bagi karier hukummu ke depan.</p>
+                    </div>
+                </div>
+
+                <div class="card bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/400x200" alt="Legal Drafting" class="w-full h-48 object-cover">
+                    <div class="p-4 md:p-6">
+                        <h4 class="text-lg md:text-xl font-semibold text-green-700">5.	Orasi – Ungkapkan Gagasanmu dengan Penuh Keyakinan</h4>
+                        <p class="text-gray-700 mt-2">Punya ide besar yang ingin disampaikan kepada dunia? Di P3A, kami akan membimbingmu menjadi orator ulung yang mampu memengaruhi dan menginspirasi banyak orang melalui pidato yang berkesan. Bersiaplah untuk menjadi sosok yang disegani di atas panggung!.</p>
+                    </div>
+                </div>
+
+                <div class="card bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/400x200" alt="Legal Drafting" class="w-full h-48 object-cover">
+                    <div class="p-4 md:p-6">
+                        <h4 class="text-lg md:text-xl font-semibold text-green-700">6. Moot Court – Latih Diri Sebagai Pengacara Hebat Masa Depan</h4>
+                        <p class="text-gray-700 mt-2">Jika kamu bercita-cita menjadi pengacara andal, Moot Court adalah tempat terbaik untuk memulai. Kamu akan mempraktikkan proses litigasi nyata melalui simulasi pengadilan, sehingga siap menghadapi dunia hukum yang sesungguhnya. Ini adalah persiapan sempurna untuk karier di bidang litigasi!</p>
+                    </div>
+                </div>
+
+                <div class="card bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/400x200" alt="Legal Drafting" class="w-full h-48 object-cover">
+                    <div class="p-4 md:p-6">
+                        <h4 class="text-lg md:text-xl font-semibold text-green-700">7.	Public Speaking – Taklukkan Panggung dengan Kepercayaan Diri</h4>
+                        <p class="text-gray-700 mt-2">Takut berbicara di depan umum? Jangan khawatir! Di sini, kamu akan dilatih untuk berbicara dengan percaya diri dan menyampaikan pesanmu secara efektif. Dapatkan keahlian yang akan membuatmu menonjol di depan audiens, baik dalam pertemuan formal maupun santai.</p>
+                    </div>
+                </div>
+
+                <div class="card bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/400x200" alt="Legal Drafting" class="w-full h-48 object-cover">
+                    <div class="p-4 md:p-6">
+                        <h4 class="text-lg md:text-xl font-semibold text-green-700">8.	Desain – Wujudkan Kreativitasmu dan Buat Kesan yang Abadi</h4>
+                        <p class="text-gray-700 mt-2">Ingin mempelajari cara menciptakan desain yang menonjol dan berkesan? Program desain kami akan membantumu mengembangkan keterampilan artistik dan teknis untuk menciptakan karya visual yang unik dan menarik. Jadikan kreativitasmu sebagai kekuatan yang tak terbatas!</p>
+                    </div>
+                </div>
+
+                <div class="card bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/400x200" alt="Legal Drafting" class="w-full h-48 object-cover">
+                    <div class="p-4 md:p-6">
+                        <h4 class="text-lg md:text-xl font-semibold text-green-700">9.	Duta – Menjadi Wajah Inspirasi dan Prestasi</h4>
+                        <p class="text-gray-700 mt-2">JBerminat menjadi wajah inspiratif organisasi? Program Duta memberikan kesempatan bagimu untuk menjadi perwakilan yang berprestasi, memotivasi, dan menginspirasi sesama kader HMI. Duta bukan hanya sekadar gelar, tetapi peran yang mencerminkan teladan akademik dan organisasi yang membawa dampak positif bagi sekitarnya.</p>
+                    </div>
+                </div>
+                <!-- Add similar cards for each program following the same format -->
+                <!-- Card 5 for Orasi, Card 6 for Moot Court, etc. -->
+
+            </div>
+        </section>
+
+        <!-- Section: Ruang Akademik -->
+        <section id="ruang-akademik" class="mt-12">
+            <h3 class="text-2xl md:text-3xl font-bold text-green-700 text-center">Ruang Akademik</h3>
+            <p class="text-center mb-10 text-gray-600">Di P3A, kami memahami bahwa kesuksesan akademik adalah fondasi yang kuat untuk masa depan yang cerah. Itulah sebabnya kami menyediakan dukungan akademik yang komprehensif untuk memastikan setiap kader HMI dapat mengoptimalkan pembelajaran mereka.</p>
+
+            <div class="space-y-6">
+                <!-- Detail list for each service -->
+                <div class="bg-green-100 p-4 md:p-6 rounded-lg shadow-md">
+                    <h4 class="text-lg font-semibold text-green-700">Bimbingan Mata Kuliah</h4>
+                    <p class="text-gray-700">Jangan biarkan mata kuliah yang sulit menghalangi perjalananmu! Kami siap membantumu memahami materi perkuliahan dengan lebih baik dan meraih hasil yang maksimal di setiap semester.</p>
+                </div>
+                
+                <div class="bg-green-100 p-4 md:p-6 rounded-lg shadow-md">
+                    <h4 class="text-lg font-semibold text-green-700">Sistem Informasi Akademik (SIAKAD)</h4>
+                    <p class="text-gray-700">Tak perlu bingung lagi mengakses informasi akademikmu. Dengan dukungan kami, kamu akan lebih mudah mengelola perkuliahan, jadwal, dan tugas-tugasmu melalui panduan penggunaan SIAKAD yang efektif.</p>
+                </div>
+
+                <div class="bg-green-100 p-4 md:p-6 rounded-lg shadow-md">
+                    <h4 class="text-lg font-semibold text-green-700">Konsultasi Pemilihan Konsentrasi</h4>
+                    <p class="text-gray-700">Masih bingung memilih konsentrasi yang sesuai? Kami akan membimbingmu dalam menemukan konsentrasi yang paling tepat berdasarkan minat dan tujuan kariermu, sehingga kamu bisa fokus pada jalur yang tepat sejak awal.</p>
+                </div>
+
+                <div class="bg-green-100 p-4 md:p-6 rounded-lg shadow-md">
+                    <h4 class="text-lg font-semibold text-green-700">Layanan Tugas Haian</h4>
+                    <p class="text-gray-700">Merasa kewalahan dengan tugas harian? Kami juga hadir untuk membantumu menyelesaikan tugas-tugas sehari-hari dengan lebih mudah dan efisien. Dengan dukungan ini, kamu bisa terus produktif dan tidak tertinggal.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Join Us Button -->
+        <div class="text-center my-12">
+            <a href="#" class="bg-green-700 text-white text-xl font-semibold py-4 px-8 rounded-lg shadow-lg hover:bg-green-600 transition duration-300">Join Us</a>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-green-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 P3A Komisariat Hukum UTM. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle Navbar for mobile view
+        document.getElementById('navbar-toggle').addEventListener('click', function() {
+            const navbarMenu = document.getElementById('navbar-menu');
+            navbarMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
